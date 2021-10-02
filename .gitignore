@@ -1,1 +1,6 @@
 /env
+/build
+/dist
+/game_gui.spec
+/score.txt
+/tests.py

@@ -31,7 +31,7 @@ class Square:
         self.font = pygame.font.SysFont('Arial', 70).render(
             self.value, True, self.font_color)
         self.rect = pygame.Rect(
-            self.x_position, self.y_position, 140, 140)
+            self.x_position, self.y_position+100, 140, 140)
         rect_obj = pygame.draw.rect(self.surface, self.color, self.rect)
         center_cords = self.font.get_rect(center=rect_obj.center)
         self.surface.blit(self.font, center_cords)

@@ -3,6 +3,7 @@ import random
 
 class Board:
     def __init__(self):
+        self.current_score = 0
         self.board = [[0, 0, 0, 0],
                       [0, 0, 0, 0],
                       [0, 0, 0, 0],
@@ -151,6 +152,7 @@ class Board:
                         row, column) + self.get_value_from_board(row, pointer)
                     self.set_board_value(row, column, new_value)
                     self.set_board_value(row, pointer, 0)
+                    self.increase_Score(new_value)
                     column += 2
                 else:
                     column += 1
@@ -165,6 +167,7 @@ class Board:
                         row, column) + self.get_value_from_board(row, pointer)
                     self.set_board_value(row, column, new_value)
                     self.set_board_value(row, pointer, 0)
+                    self.increase_Score(new_value)
                     column -= 2
                 else:
                     column -= 1
@@ -179,6 +182,7 @@ class Board:
                         row, column) + self.get_value_from_board(pointer, column)
                     self.set_board_value(row, column, new_value)
                     self.set_board_value(pointer, column, 0)
+                    self.increase_Score(new_value)
                     row += 2
                 else:
                     row += 1
@@ -193,6 +197,26 @@ class Board:
                         row, column) + self.get_value_from_board(pointer, column)
                     self.set_board_value(row, column, new_value)
                     self.set_board_value(pointer, column, 0)
+                    self.increase_Score(new_value)
                     row -= 2
                 else:
                     row -= 1
+
+    def increase_Score(self, value):
+        self.current_score += value
+
+    def get_current_score(self):
+        return self.current_score
+
+    def still_more_moves(self):
+        for row in range(self.get_board_len()):
+            for column in range(self.get_board_len()-1):
+                if self.get_value_from_board(row, column) == self.get_value_from_board(row, column + 1):
+                    return True
+
+        for column in range(self.get_board_len()):
+            for row in range(self.get_board_len()-1):
+                if self.get_value_from_board(row, column) == self.get_value_from_board(row+1, column):
+                    return True
+
+        return False
