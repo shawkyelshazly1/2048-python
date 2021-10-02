@@ -8,7 +8,7 @@ Download .exe file for windows from here [Win Version](www.google.com)
 ### Screenshot
 
 <p align="center">
-  [!Test](https://media.giphy.com/media/zcpW8Ng2pTDjo2jvKe/giphy.gif)
+  [Test](https://media.giphy.com/media/zcpW8Ng2pTDjo2jvKe/giphy.gif)
 </p>
 
 
