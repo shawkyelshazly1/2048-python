@@ -8,7 +8,7 @@ Download .exe file for windows from here [Win Version](www.google.com)
 ### Screenshot
 
 <p align="center">
-  <img src="https://ibb.co/CtRpPVH" alt="Screenshot"/>
+  <img src="https://i.ibb.co/MhFyBPC/Screenshot-from-2021-10-02-14-04-46.png" alt="Screenshot"/>
 </p>
 
 
