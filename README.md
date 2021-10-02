@@ -2,7 +2,7 @@
 A clone of [gabrielecirulli-2048](https://github.com/gabrielecirulli/2048)
 
 ### Download & Installation
-Download .exe file for windows from here [Win Version](www.google.com)
+Download .exe file for windows from here [Win Version](https://store2.gofile.io/download/0e8113e5-f744-4c5e-87b0-33fce76d1fe3/2048-game.zip)
 
 
 ### Screenshot
